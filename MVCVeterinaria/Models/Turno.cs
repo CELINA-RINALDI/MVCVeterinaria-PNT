@@ -37,5 +37,6 @@ namespace MVCVeterinaria.Models
         [Required]
         [MaxLength(15)]
         public string Celular { get; set; }
+
     }
 }
