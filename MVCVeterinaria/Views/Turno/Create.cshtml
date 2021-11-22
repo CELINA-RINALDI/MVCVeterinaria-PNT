@@ -1,10 +1,10 @@
 ﻿@model MVCVeterinaria.Models.Turno
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Crear";
 }
 
-<h1>Create</h1>
+<h1>Crear</h1>
 
 <h4>Turno</h4>
 <hr />
@@ -30,7 +30,7 @@
             <div class="form-group">
                 <label asp-for="TipoMascota" class="control-label"></label>
                 <select asp-for="@Model.TipoMascota" asp-items="Html.GetEnumSelectList<TipoMascota>()"></select>
-                    <span asp-validation-for="TipoMascota" class="text-danger"></span>
+                <span asp-validation-for="TipoMascota" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Raza" class="control-label"></label>
@@ -53,7 +53,7 @@
                 <span asp-validation-for="Celular" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Crear" class="btn btn-primary" />
             </div>
         </form>
     </div>
